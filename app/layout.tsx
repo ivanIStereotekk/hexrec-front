@@ -25,7 +25,9 @@ export default function RootLayout({children,params,}: {children: React.ReactNod
       <body className={inter.className}>
       
         <HeadingComponent/>
+        <div className=" justify-left flex-row border border-dotted border-gray-800"></div>
         <div>{children}</div>
+        <div className=" justify-left flex-row border border-dotted border-gray-800"></div>
         <FooterComponent/>
       </body>
 

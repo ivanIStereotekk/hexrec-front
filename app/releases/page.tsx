@@ -5,7 +5,7 @@
 
 // https://react-spectrum.adobe.com/react-spectrum/Provider.html#themes - ЭТО ПРОВАЙДЕР ! Он нужен
 import AudioPlayer from 'react-modern-audio-player';
-
+import { Suspense } from 'react';
 import Lena from '@/components/ImageLena'    
 import Ivan from '@/components/ImageIvan'  
 
@@ -31,6 +31,8 @@ function Player (){
 export default function ReleasesPage(){
 
     return <>
+    
+    <Suspense fallback={<Loading/>}>
     
     <div className="flex justify-between space-x-10 p-16">
         <div>
@@ -61,7 +63,10 @@ export default function ReleasesPage(){
         </div>
     </div>
    
-    
-    
+    </Suspense>
     </> 
 }
+
+function Loading() {
+    return <h2>🌀 Loading...</h2>;
+  }
