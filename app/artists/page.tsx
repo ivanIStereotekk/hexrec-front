@@ -1,5 +1,9 @@
 import { use } from "react"
 import Link from 'next/link'
+import { Suspense } from 'react';
+import Loading from "../loading";
+
+
 
 
 async function getUsers(){
@@ -14,12 +18,14 @@ export default function UsersPage() {
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <h4>{process.env.USERS_PAGE_TEXT} </h4>
+        <Suspense fallback={<Loading/>}>
         <ul>
             {users.map((user:any) => (
                    <li key={user.id}> <Link href={`/artists/${user.id}`}><h5>{user.name}  - {user.email} | {user.age} - {user.biography.substring(0,30)+"..."}</h5></Link><wbr></wbr> </li> 
                 )
             )}
         </ul>
+        </Suspense>
         </div>
       </main>
     )

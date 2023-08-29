@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.heading-link {
+  @apply dark:hover:bg-black motion-safe:hover:-translate-x-0.5 motion-safe:transition;
+}

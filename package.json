@@ -27,6 +27,8 @@
     "react-anime": "4.1.1",
     "react-dom": "18.2.0",
     "react-modern-audio-player": "^1.4.0-rc.2",
+    "react-player": "^2.12.0",
+    "react-soundcloud-embedded": "^2.0.7",
     "styled-components": "^6.0.5",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
