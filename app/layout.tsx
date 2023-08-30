@@ -6,7 +6,7 @@ import HeadingComponent from '@/components/Heading'
 import FooterComponent from '@/components/Footer'
 import { ReactNode } from 'react'
 
-
+import userPanel from "@/components/UserPanel"
      
 
 
@@ -24,7 +24,7 @@ export default function RootLayout({children,params,}: {children: React.ReactNod
     <html lang="en">
       <body className={inter.className}>
       
-        <HeadingComponent/>
+        <HeadingComponent/> 
         <div className=" justify-left flex-row border border-dotted border-gray-800"></div>
         <div>{children}</div>
         <div className=" justify-left flex-row border border-dotted border-gray-800"></div>
