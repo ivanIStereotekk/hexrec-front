@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Lena from '@/components/ImageLena'    
 import Ivan from '@/components/ImageIvan'   
 import roundAnimation from '@/components/indexAnimation'
-import userPanel from "@/components/UserPanel"
+
 
 export default function Home() {
   return (
@@ -20,8 +20,8 @@ export default function Home() {
       
       <div className='flex'>
       
-        {/* <Lena/>
-        <Ivan/> */}
+        <Lena/>
+        <Ivan/>
 
         
 

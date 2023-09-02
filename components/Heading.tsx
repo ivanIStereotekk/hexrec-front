@@ -5,7 +5,7 @@ import HexRecLogo from "./HexRec"
 
 
 export default function HeadingComponent() {
-    const curr_user = 'admin';
+    const curr_user = 'Ewan Potterman';
     return(
         <div className="flex flex-nowrap justify-start  bg-gray-950 text-base">
         <header className="p-10 w-full  max-w-5xl items-center justify-between font-mono text-md lg:flex">

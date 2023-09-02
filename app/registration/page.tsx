@@ -4,7 +4,7 @@ import React from 'react'
 // Lazy load the YouTube player
 
 
-
+import Image from 'next/image'
 
 export default function RegistrationPage(){
 
@@ -13,8 +13,13 @@ export default function RegistrationPage(){
 
 
             <p>Registration Page:</p>
-
-            <iframe src="https://lottie.host/?file=f6a76dc5-80a7-4c0f-be9b-c53ce058559d/7o0rNUVzVW.json"></iframe>
+            <img src="http://127.0.0.1:8000/pictures/get/3"></img>
+            {/* <Image
+                src="http://127.0.0.1:8000/pictures/get/3"
+                alt="Picture of the author"
+                width={500}
+                height={500}
+    /> */}
 
 
 
